@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+@import "reset";
+
+
+
+/* ========= variables ========= */
+
+
+
+/* ========= clearfix ========= */
+
+.clearfix::after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+
+
+/* ========= common ========= */
+
+body {
+  font-size: 16px;
+}
+
+.wrapper {
+  width: 96%;
+  padding: 0 2%;
+}
+
+li {
+  list-style: none;
+}
+
+/* ========= individuals ========= */
+
+header {
+  height: 8vh;
+  text-align: center;
+  line-height: 8vh;
+  border-bottom: 1px solid #000;
+}
+
+
+
+.record {
+  width: 90%;
+  margin: 30px auto;
+
+  dt {
+    width: 30%;
+    float: left;
+    margin-bottom: 10px;
+  }
+
+  dd {
+    width: 60%;
+    // height: 1rem;
+    margin-left: 30%;
+    margin-bottom: 10px;
+
+    input {
+      width: 100%;
+      background-color: #e1efff;
+    }
+
+    textarea {
+      width: 100%;
+      background-color: #e1efff;
+    }
+  }
+}
+
+
+.btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  .btn {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #666;
+    background-color: #fff;
+    color:#0d7dfd;
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      background: #0d7dfd;
+      color:#fff;
+    }
+  }
+}
+
+
+
+.cards {
+  width: 96%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .card {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #555;
+    /* box-shadow: 1px 1px 1px 1px #555; */
+    /* box-shadow: 1px 1px 1px; */
+
+    .action_info {
+      /* width: 90%; */
+      height: 70px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 5px;
+
+      .action {
+        margin-bottom: 10px;
+      }
+
+      .reminder {
+        font-size: 0.75rem;
+        text-align: right;
+      }
+    }
+
+    .book_info {
+      /* width: 90%; */
+      height: 100px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      background: #ffe;
+
+      .title{
+        margin-bottom: 10px;
+      }
+
+      .summary{
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+
+
+footer {
+  height: 5vh;
+  text-align: center;
+  line-height: 5vh;
+  border-top: 1px solid #000;
+}
